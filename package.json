@@ -7,7 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "compression": "^1.6.2",
     "cors": "2.8.1",
     "express": "4.13.3"
   },
