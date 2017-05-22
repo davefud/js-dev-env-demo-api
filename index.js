@@ -2,12 +2,13 @@ var express =  require('express');
 var cors = require('cors');
 
 const app = express();
+app.use(compression());
 app.use(cors());
 
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-  response.send('Hello World!')
+  response.send('JavaScript Demo API')
 });
 
 app.get('/users', function(req, res) {
