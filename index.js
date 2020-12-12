@@ -3,13 +3,13 @@ var cors = require('cors');
 var compression = require('compression');
 
 const app = express();
-app.use(compression());
+// app.use(compression());
 app.use(cors());
 
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-  response.send('JavaScript Demo API')
+  response.send('JavaScript Demo API <a href="/users">Users</a>');
 });
 
 app.get('/users', function(req, res) {
